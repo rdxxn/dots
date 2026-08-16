@@ -1,0 +1,38 @@
+[
+  {
+    "completed": false,
+    "duration_seconds": null,
+    "episode_name": "[Reaktor] Serial Experiments Lain - E04 [1080p][x265][10-bit][Dual-Audio].mkv",
+    "position_seconds": 0.021,
+    "series_title": "Serial Experiments Lain",
+    "slug": "serial-experiments-lain",
+    "watched_at": 1786825498
+  },
+  {
+    "completed": false,
+    "duration_seconds": null,
+    "episode_name": "[Reaktor] Serial Experiments Lain - E02 [1080p][x265][10-bit][Dual-Audio].mkv",
+    "position_seconds": 35.557,
+    "series_title": "Serial Experiments Lain",
+    "slug": "serial-experiments-lain",
+    "watched_at": 1786822764
+  },
+  {
+    "completed": false,
+    "duration_seconds": null,
+    "episode_name": "[Reaktor] Serial Experiments Lain - E01 [1080p][x265][10-bit][Dual-Audio].mkv",
+    "position_seconds": 16.12,
+    "series_title": "Serial Experiments Lain",
+    "slug": "serial-experiments-lain",
+    "watched_at": 1786822763
+  },
+  {
+    "completed": false,
+    "duration_seconds": null,
+    "episode_name": "[Reaktor] Serial Experiments Lain - E02 [1080p][x265][10-bit][Dual-Audio].mkv",
+    "position_seconds": 24.337,
+    "series_title": "Serial Experiments Lain",
+    "slug": "serial-experiments-lain",
+    "watched_at": 1786822760
+  }
+]
