@@ -1,0 +1,149 @@
+spawn-at-startup "noctalia"
+
+// Remove client side decorations
+prefer-no-csd
+
+// disable middle click paste
+clipboard {
+    disable-primary
+}
+
+input {
+    keyboard {
+        xkb {
+            layout "gb"
+            // Disable capslock & makes it ctrl (cant make it Fn)
+            options "ctrl:nocaps"
+            
+        }
+    }
+
+    touchpad {
+        tap
+        natural-scroll
+        // Drag & drop and allows for very short lifts
+        drag true
+        drag-lock
+
+        disabled-on-external-mouse
+    }
+
+    mouse {
+        // Disable accel
+        accel-profile "flat"
+    }
+
+    trackpoint {
+    }
+
+    // Focus windows and outputs automatically when moving the mouse into them. 
+    // (90% to avoid some issue where a tiny portion of a window is on screen)
+    focus-follows-mouse max-scroll-amount="90%"
+}
+
+gestures {
+    hot-corners {
+        off
+    }
+}
+
+output "HDMI-A-1" {
+    position x=0 y=0
+}
+
+output "HDMI-A-2" {
+    position x=2560 y=0
+}
+
+layout {
+    // Set gaps around windows in logical pixels.
+    gaps 5
+
+    center-focused-column "never"
+
+    // If one app/workspace - center horizontally
+    always-center-single-column
+
+    // customizes the widths that "switch-preset-column-width" (Mod+R) toggles between.
+    preset-column-widths {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+        proportion 1.0
+    }
+
+    // customizes the heights that "switch-preset-window-height" (Mod+Ctrl+Shift+R) toggles between.
+    preset-window-heights { 
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+        proportion 1.0
+    }
+
+    // default width of the new windows.
+    default-column-width { proportion 0.5; }
+
+    focus-ring {
+        // How many logical pixels the ring extends out from the windows.
+        width 2
+
+        // Color of the ring on the active monitor.
+        active-color "#cba6f7c0"
+
+        // Color of the ring on inactive monitors.
+        inactive-color "#6c708660"
+    }
+
+    border {
+        off
+    }
+
+    shadow {
+        off
+    }
+
+    struts { }
+
+
+    tab-indicator {
+        on
+        place-within-column
+        position "top"
+
+        width 3
+        length total-proportion=1.0
+        gaps-between-tabs 3
+        gap 4
+        corner-radius 3
+
+        active-color "#cba6f7"
+        inactive-color "#6c7086"
+    }
+
+
+}
+
+hotkey-overlay {
+    skip-at-startup 
+}
+
+animations {
+    // 1.3x speed
+    slowdown 0.75
+}
+
+window-rule { }
+
+// Open the Firefox/librewolf picture-in-picture player as floating by default.
+window-rule {
+    match app-id=r#"(firefox|librewolf)$"# title="^Picture-in-Picture$"
+    open-floating true
+}
+
+debug {
+  // Allows notification actions and window activation from Noctalia.
+  honor-xdg-activation-with-invalid-serial
+}
+
+// Keybinds are managed in a separate file
+include "keybinds.kdl"
