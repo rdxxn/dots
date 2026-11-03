@@ -17,28 +17,41 @@
         },
         {
             "type": "host",
-            "key": "󰌢  PC",
+            "key": "   PC",
             "keyColor": "green"
         },
         {
             "type": "cpu",
-            "key": "│ ├󰻠 ",
+            "key": "   󰻠 ",
             "keyColor": "green"
         },
         {
             "type": "gpu",
-            "key": "│ ├󰍹 ",
+            "key": "   󰍹 ",
             "keyColor": "green"
         },
         {
             "type": "memory",
-            "key": "│ ├󰑭 ",
+            "key": "   󰑭 ",
             "keyColor": "green"
         },
         {
             "type": "disk",
-            "key": "└ └󰋊 ",
-            "keyColor": "green"
+            "key": "   󰋊 ",
+            "keyColor": "green",
+            "folders": "/"
+        },
+        {
+            "type": "disk",
+            "key": "   󰋊 ",
+            "keyColor": "green",
+            "folders": "/crucial"
+        },
+        {
+            "type": "disk",
+            "key": "   󰋊 ",
+            "keyColor": "green",
+            "folders": "/run/media/rdxxn/Spinning_Rust"
         },
         {
             "type": "custom",
@@ -51,53 +64,53 @@
         },
         {
             "type": "os",
-            "key": "  OS",
+            "key": "   OS",
             "keyColor": "yellow"
         },
         {
             "type": "kernel",
-            "key": "│ ├󰌽 ",
+            "key": "   󰌽 ",
             "keyColor": "yellow"
         },
         {
             "type": "bios",
-            "key": "│ ├󰖡 ",
+            "key": "   󰖡 ",
             "keyColor": "yellow"
         },
         {
             "type": "packages",
-            "key": "│ ├󰏗 ",
+            "key": "   󰏗 ",
             "keyColor": "yellow"
         },
         {
             "type": "shell",
-            "key": "└ └󰞷 ",
+            "key": "   󰞷 ",
             "keyColor": "yellow"
         },
         "break",
         {
             "type": "de",
-            "key": "󰧨  DE",
+            "key": "   DE",
             "keyColor": "blue"
         },
         {
             "type": "lm",
-            "key": "│ ├󰍁 ",
+            "key": "   󰍁 ",
             "keyColor": "blue"
         },
         {
             "type": "wm",
-            "key": "│ ├󱂬 ",
+            "key": "   󱂬 ",
             "keyColor": "blue"
         },
         {
             "type": "wmtheme",
-            "key": "│ ├󰉦 ",
+            "key": "   󰉦 ",
             "keyColor": "blue"
         },
         {
             "type": "terminal",
-            "key": "└ └󰆍 ",
+            "key": "   󰆍 ",
             "keyColor": "blue"
         },
         {
